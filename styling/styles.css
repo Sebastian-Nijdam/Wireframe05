@@ -92,6 +92,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
+
 }
 
 .introduction__content {
@@ -108,6 +109,27 @@ body {
     text-align: center;
     margin: 30px;
     font-size: 30px;
+}
+.someSubtitle__contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #CCCCCC;
+    width: 50%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0 10px;
+}
+.someSubtitle__square {
+    height: 80px;
+    width: 80px;
+    margin: 10px 30px 10px 0;
+    background-color: #FDFDFD;
+}
+.someSubtitle__square--active {
+    background-color: #E6E6E6;
+    border: solid 1px black;
 }
 
 /*End someSubtitle styling*/

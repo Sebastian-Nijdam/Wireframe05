@@ -37,17 +37,20 @@
     <div class="introduction__contentContainer">
         <div class="introduction__contentColumn1">
             <p class="introduction__content">
-                Morbi porttitor at erat in elementum. Ut ultrices, nisl at pretium posuere, sem sem rutrum erat, scelerisque
+                Morbi porttitor at erat in elementum. Ut ultrices, nisl at pretium posuere, sem sem rutrum erat,
+                scelerisque
                 ac consequat non, cursus et justo. Quisque depibus convallis sapien id dignissim.
             </p>
             <p class="introduction__content">
-                Duis quis aliquam turpis. Maecenas sagittis, lorem eu elementum tincidunt, risus felis malesuade ex, quis
+                Duis quis aliquam turpis. Maecenas sagittis, lorem eu elementum tincidunt, risus felis malesuade ex,
+                quis
                 varius dolor sapien vitae ipsum. Sed malesuada nunc tortor, id elementum felis fermentum quis.
             </p>
         </div>
         <div class="introduction__contentColumn2">
             <p class="introduction__content">
-                Morbi porttitor at erat in elementum. Ut ultrices, nisl at pretium posuere, sem sem rutrum erat, scelerisque
+                Morbi porttitor at erat in elementum. Ut ultrices, nisl at pretium posuere, sem sem rutrum erat,
+                scelerisque
                 ac consequat non, cursus et justo. Quisque depibus convallis sapien id dignissim.
             </p>
             <ul class="introduction__content">
@@ -65,7 +68,10 @@
         Some subtitle
     </h2>
     <div class="someSubtitle__contentContainer">
-
+        <div style="background-color: #ff00ff;" class="someSubtitle__square"></div>
+        <div style="background-color: #ff0000;" class="someSubtitle__square someSubtitle__square--active"></div>
+        <div style="background-color: #55ffff;" class="someSubtitle__square"></div>
+        <div style="background-color: #ffff00;" class="someSubtitle__square"></div>
     </div>
 </section>
 
@@ -84,7 +90,8 @@
             <input type="text" name="#" class="form__input">
             <input type="text" name="#" class="form__input">
             <div class="form__checkbox">
-                <input type="checkbox" name="checkbox" value="check"/>Lorem<a href="#" class="footer__checkboxLink"> spum dolor </a>i sit amet
+                <input type="checkbox" name="checkbox" value="check"/>Lorem<a href="#" class="footer__checkboxLink">
+                spum dolor </a>i sit amet
             </div>
             <input type="submit" value="" class="form__submitButton">
         </div>
@@ -94,6 +101,22 @@
 <footer class="footer">
 
 </footer>
+
+<script>
+    var elements = document.getElementsByClassName("someSubtitle__square");
+    var bigone = document.getElementsByClassName("someSubtitle__contentContainer")[0];
+
+    for ( var index = 0; index < elements.length; index++ ) {
+        elements[index].addEventListener("click", function () {
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].classList.remove("someSubtitle__square--active");
+            }
+            this.classList.add("someSubtitle__square--active");
+            bigone.style.backgroundColor = this.style.backgroundColor;
+        });
+    }
+
+</script>
 
 </body>
 </html>
