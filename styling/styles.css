@@ -1,0 +1,208 @@
+body {
+    margin: 0 !important;
+    padding: 0;
+}
+
+/* Start navigation styling*/
+
+.navigation__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #CCCCCC;
+    margin: 0;
+}
+
+.navigation__link {
+    list-style-type: none;
+    margin: 0 30px 0;
+    padding: 30px 0 30px;
+}
+
+.navigation__linkText {
+    font-style: normal;
+    color: gray;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+/*End navigation styling*/
+/* Start header styling*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header__container {
+    padding: 250px 0 250px;
+    width: 33.33%;
+}
+
+.header__containerImage {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__containerTitle {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.header__container--lightGray {
+    background: #BDC0C2;
+}
+
+.header__container--gray {
+    background: #8B8B8B;
+}
+
+.header__container--darkGray {
+    background: #464646;
+}
+
+/*End header styling*/
+/*Start introduction styling*/
+
+.introduction__subtitle {
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+}
+
+.introduction__contentContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.introduction__contentColumn1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.introduction__contentColumn2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+
+}
+
+.introduction__content {
+    width: 50%;
+    font-size: 20px;
+    margin: 0 25px 20px;
+    text-align: justify;
+}
+
+/*End introduction styling*/
+/*Start someSubtitle styling*/
+
+.someSubtitle__subtitle {
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+}
+.someSubtitle__contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #CCCCCC;
+    width: 50%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0 10px;
+}
+.someSubtitle__square {
+    height: 80px;
+    width: 80px;
+    margin: 10px 30px 10px 0;
+    background-color: #FDFDFD;
+}
+.someSubtitle__square--active {
+    background-color: #E6E6E6;
+    border: solid 1px black;
+}
+
+/*End someSubtitle styling*/
+/*Start form styling*/
+
+.form {
+    margin-bottom: 100px;
+}
+.form__subtitle {
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+}
+
+.form__inputs {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.footer__contentColumn1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.footer__contentColumn2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form__input {
+    width: 90%;
+    height: 40px;
+    border: none;
+    background: #CCCCCC;
+    margin-bottom: 10px;
+}
+
+.form__textarea {
+    height: 150px;
+    max-width: 90%;
+    max-height: 150px;
+    border: none;
+    background: #CCCCCC;
+}
+
+.form__checkbox {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0 20px 20px;
+    width: 100%;
+    font-size: 20px;
+}
+.footer__checkboxLink {
+    color: #000000;
+}
+.form__submitButton {
+    width: 200px;
+    height: 40px;
+    align-self: flex-end;
+    border: none;
+    background: #454545;
+}
+
+/*End form styling*/
+/*Start footer styling*/
+
+.footer {
+    background: #454545;
+    padding: 25px 0 25px;
+}
+
+/*End footer styling*/

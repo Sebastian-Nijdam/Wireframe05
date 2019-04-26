@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styling/styles.css">
+    <title>Wireframe05</title>
+</head>
+<body>
+<nav class="navigation">
+    <ul class="navigation__links">
+        <li class="navigation__link"><a href="#" class="navigation__linkText">Link</a></li>
+        <li class="navigation__link"><a href="#" class="navigation__linkText">Link</a></li>
+        <li class="navigation__link"><a href="#" class="navigation__linkText">Link</a></li>
+        <li class="navigation__link"><a href="#" class="navigation__linkText">Link</a></li>
+    </ul>
+</nav>
+
+<header class="header">
+    <div class="header__container header__container--darkGray">
+        <img src="images/apollo_hexagon_grey_439150.1524524984.png" alt="image" class="header__containerImage">
+        <h3 class="header__containerTitle">Lorem ipsum dolor sit</h3>
+    </div>
+    <div class="header__container header__container--gray">
+        <img src="images/apollo_hexagon_grey_439150.1524524984.png" alt="image" class="header__containerImage">
+        <h3 class="header__containerTitle">Lorem ipsum dolor sit</h3>
+    </div>
+    <div class="header__container header__container--lightGray">
+        <img src="images/apollo_hexagon_grey_439150.1524524984.png" alt="image" class="header__containerImage">
+        <h3 class="header__containerTitle">Lorem ipsum dolor sit</h3>
+    </div>
+</header>
+
+<section class="introduction">
+    <h2 class="introduction__subtitle">
+        Introduction
+    </h2>
+    <div class="introduction__contentContainer">
+        <div class="introduction__contentColumn1">
+            <p class="introduction__content">
+                Morbi porttitor at erat in elementum. Ut ultrices, nisl at pretium posuere, sem sem rutrum erat,
+                scelerisque
+                ac consequat non, cursus et justo. Quisque depibus convallis sapien id dignissim.
+            </p>
+            <p class="introduction__content">
+                Duis quis aliquam turpis. Maecenas sagittis, lorem eu elementum tincidunt, risus felis malesuade ex,
+                quis
+                varius dolor sapien vitae ipsum. Sed malesuada nunc tortor, id elementum felis fermentum quis.
+            </p>
+        </div>
+        <div class="introduction__contentColumn2">
+            <p class="introduction__content">
+                Morbi porttitor at erat in elementum. Ut ultrices, nisl at pretium posuere, sem sem rutrum erat,
+                scelerisque
+                ac consequat non, cursus et justo. Quisque depibus convallis sapien id dignissim.
+            </p>
+            <ul class="introduction__content">
+                <li class="introduction__contentBulletPoint">Duis quis aliquam turpis.</li>
+                <li class="introduction__contentBulletPoint">Maecenas sagittis, lorem eu elementum</li>
+                <li class="introduction__contentBulletPoint">Felis malesuade ex</li>
+                <li class="introduction__contentBulletPoint">Vitae ipsum malesuada</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="someSubtitle">
+    <h2 class="someSubtitle__subtitle">
+        Some subtitle
+    </h2>
+    <div class="someSubtitle__contentContainer">
+        <div style="background-color: #ff00ff;" class="someSubtitle__square"></div>
+        <div style="background-color: #ff0000;" class="someSubtitle__square someSubtitle__square--active"></div>
+        <div style="background-color: #55ffff;" class="someSubtitle__square"></div>
+        <div style="background-color: #ffff00;" class="someSubtitle__square"></div>
+    </div>
+</section>
+
+<section class="form">
+    <h2 class="form__subtitle">
+        Another subtitle
+    </h2>
+    <form class="form__inputs">
+        <div class="footer__contentColumn1">
+            <input type="text" name="#" class="form__input">
+            <input type="text" name="#" class="form__input">
+            <textarea class="form__textarea"></textarea>
+        </div>
+        <div class="footer__contentColumn2">
+            <input type="text" name="#" class="form__input">
+            <input type="text" name="#" class="form__input">
+            <input type="text" name="#" class="form__input">
+            <div class="form__checkbox">
+                <input type="checkbox" name="checkbox" value="check"/>Lorem<a href="#" class="footer__checkboxLink">
+                spum dolor </a>i sit amet
+            </div>
+            <input type="submit" value="" class="form__submitButton">
+        </div>
+    </form>
+</section>
+
+<footer class="footer">
+
+</footer>
+
+<script>
+    var elements = document.getElementsByClassName("someSubtitle__square");
+    var bigone = document.getElementsByClassName("someSubtitle__contentContainer")[0];
+
+    for ( var index = 0; index < elements.length; index++ ) {
+        elements[index].addEventListener("click", function () {
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].classList.remove("someSubtitle__square--active");
+            }
+            this.classList.add("someSubtitle__square--active");
+            bigone.style.backgroundColor = this.style.backgroundColor;
+        });
+    }
+
+</script>
+
+</body>
+</html>
